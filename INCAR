@@ -1,0 +1,22 @@
+ PREC = Accurate
+ ENCUT = 500
+ EDIFF = 1e-8
+ ISMEAR = -15; SIGMA = 0.01
+ LREAL = .FALSE.
+ LWAVE = .FALSE.
+ LCHARG = .FALSE.
+ #run electron-phonon calculation
+ ELPH_MODE = TRANSPORT
+ 
+ # for the determination of the chemical potential
+ ELPH_ISMEAR = -15 # smearing method 
+ 
+ # for the computation of transport coefficients
+ TRANSPORT_NEDOS = 3501
+# ELPH_SELFEN_TEMPS = 0 100 200 300 400 500
+  ELPH_SELFEN_TEMPS = 0 100 200 300 400 500 600 700 800 900 1000 1100 1200
+ 
+  ELPH_SCATTERING_APPROX = CRTA
+ TRANSPORT_RELAXATION_TIME = 1e-14
+ 
+ ELPH_SELFEN_CARRIER_DEN = -1e17 -1e16 -1e15 -1e14 1e14 1e15 1e16 1e17
